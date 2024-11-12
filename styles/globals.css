@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+
+@layer components {
+  .icon {
+    @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-white cursor-pointer hover:bg-[#446596] hover:text-white transition-colors duration-200;
+  }
+  .icontogglemode {
+    @apply sm:inline-flex xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-white cursor-pointer hover:bg-[#446596] hover:text-white transition-colors duration-200;
+  }
+  .inputIcon {
+    @apply flex flex-grow justify-center p-2 items-center space-x-1 hover:bg-gray-100 rounded-xl cursor-pointer transition-colors duration-200;
+  }
+}
+
+
+
+.fade-out {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.invisible-scrollbar {
+  scrollbar-width: none;
+}
+
+.producto-card {
+  margin: 10px;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
